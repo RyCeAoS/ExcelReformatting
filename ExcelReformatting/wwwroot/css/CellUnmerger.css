@@ -1,0 +1,46 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+.FileUploadcontainer {
+    background-color: aliceblue;
+    border-radius: 20px;
+    height: 325px;
+    margin: auto;
+    width: 65%;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Info-Box{
+    border-style: dashed;
+    border-radius: 10px;
+    text-align: center;
+    height: 200px;
+}
+
+.Info-Box p{
+    position: relative;
+    top: 45%;
+}
+
+
+
+.Submit {
+    position: relative;
+    top: 15%;
+   
+}
+
+.FileInput{
+    margin-bottom: 10px;
+    
+}
+
+form {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    
+}
