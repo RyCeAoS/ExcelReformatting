@@ -11,17 +11,17 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.Info-Box{
+.Info-Box {
     border-style: dashed;
     border-radius: 10px;
     text-align: center;
     height: 200px;
 }
 
-.Info-Box p{
-    position: relative;
-    top: 45%;
-}
+    .Info-Box p {
+        position: relative;
+        top: 45%;
+    }
 
 
 
@@ -35,34 +35,34 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.Submit:active{
-    transform: scale(0.80);
-    box-shadow: 0 2px 6px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
+    .Submit:active {
+        transform: scale(0.80);
+        box-shadow: 0 2px 6px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
 
 
-label{
+label {
     cursor: pointer;
     background-color: lightsteelblue;
-    padding:  5px;
+    padding: 5px;
     border-radius: 7.5px;
     margin-right: 15px;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-label:active{
-    transform: scale(0.80);
-    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
 
-#input{
+    label:active {
+        transform: scale(0.80);
+        box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+
+#input {
     opacity: 0;
     position: absolute;
     z-index: -1;
 }
 
-.FileInput{
+.FileInput {
     margin-bottom: 10px;
-    
 }
 
 form {
@@ -71,5 +71,4 @@ form {
 
 h1 {
     text-align: center;
-    
 }

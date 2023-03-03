@@ -8,11 +8,11 @@ namespace ExcelReformatting.Models
     public class Client
     {
        
-        public int wfid { get; set; }
+        public string wfid { get; set; }
         public string dte { get; set; }
-        public int c_n { get; set; }
+        public string c_n { get; set; }
+        public string a_i_d { get; set; }
         public string f_n { get; set; }
-        public int a_i_d { get; set; }
         public string ph_num{ get; set; }
         public string inM { get; set; }
         public string cntr { get; set; }
