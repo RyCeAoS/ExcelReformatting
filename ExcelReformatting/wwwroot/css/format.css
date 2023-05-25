@@ -2,9 +2,9 @@
 
 
 .FileUploadcontainer {
-    background-color: aliceblue;
+    background-color: #4F4F52;
     border-radius: 20px;
-    height: 325px;
+    height: 350px;
     margin: auto;
     width: 65%;
     padding: 20px 40px;
@@ -13,13 +13,19 @@
 
 .Info-Box{
     border-style: dashed;
+    border-color: black;
     border-radius: 10px;
     text-align: center;
-    height: 200px;
+    height: 265px;
+}
+
+h1{
+    color: white;
 }
 
 .Info-Box p{
     position: relative;
+    color: white;
     top: 45%;
 }
 
@@ -28,10 +34,11 @@
 .Submit {
     position: relative;
     top: 15%;
-    background-color: lightsteelblue;
+    background-color: #222020;
+    color: white;
     padding: 5px;
     border-radius: 7.5px;
-    border: hidden;
+    border-color: black;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -42,11 +49,14 @@
 
 
 label{
+
     cursor: pointer;
-    background-color: lightsteelblue;
+    background-color: #222020;
+    color: white;
     padding:  5px;
     border-radius: 7.5px;
     margin-right: 15px;
+    border-color: black;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 label:active{

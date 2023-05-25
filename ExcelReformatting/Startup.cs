@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ExcelReformatting.Interfaces;
+using ExcelReformatting.Service;
 
 namespace ExcelReformatting
 {
@@ -19,11 +21,35 @@ namespace ExcelReformatting
         }
 
         public IConfiguration Configuration { get; }
+        public delegate IReadService ServiceResolver(string key);
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddControllersWithViews();
+            services.AddScoped<ISortService, SortService>();
+            services.AddTransient<UnmergeService>();
+            services.AddTransient<ReadClientFile>();
+            services.AddScoped<ICaseNumberDoc, CaseNumberDoc>();
+
+            services.AddTransient<ServiceResolver>(serviceProvider => key =>
+            {
+                switch (key)
+                {
+                    case "A":
+                        return serviceProvider.GetService<UnmergeService>();
+                    case "B":
+                        return serviceProvider.GetService<ReadClientFile>();
+                    default:
+                        throw new KeyNotFoundException();
+                }
+
+
+
+
+
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

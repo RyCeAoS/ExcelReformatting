@@ -33,18 +33,19 @@ namespace ExcelReformatting.Controllers
         }
 
 
-        public IActionResult Unmerge()
+  
+        public IActionResult Format()
         {
             return View();
         }
 
 
-        public IActionResult Sort()
+        public IActionResult WordDoc()
         {
             return View();
         }
 
-        
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
